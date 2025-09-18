@@ -1,0 +1,30 @@
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+    version="3.1">
+    <persistence-unit name="academiaPU">
+        <!-- Classes de entidades JPA -->
+        <class>com.exemplo.academia.model.Aluno</class>
+        <class>com.exemplo.academia.model.Treinador</class>
+        <class>com.exemplo.academia.model.Treino</class>
+        <class>com.exemplo.academia.model.AlunoTreino</class>
+        <class>com.exemplo.academia.model.AlunoTreinoId</class>
+        <class>com.exemplo.academia.model.ControleSistema</class>
+
+        <properties>
+            <!-- Configura&#195;&#167;&#195;&#163;o JDBC -->
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/postgres" />
+            <property name="jakarta.persistence.jdbc.user" value="postgres" />
+            <property name="jakarta.persistence.jdbc.password" value="mafer" />
+            <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver" />
+
+            <!-- Dialeto do Hibernate para Postgres -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
+
+            <!-- Log de SQL no console -->
+            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.format_sql" value="true" />
+
+            <!-- Controle do esquema: none/update/create-drop -->
+            <property name="hibernate.hbm2ddl.auto" value="none" />
+        </properties>
+    </persistence-unit>
+</persistence>

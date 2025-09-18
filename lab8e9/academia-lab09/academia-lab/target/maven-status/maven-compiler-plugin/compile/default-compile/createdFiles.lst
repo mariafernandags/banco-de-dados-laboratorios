@@ -1,0 +1,13 @@
+com\example\academia\DAO\TreinoDAO.class
+com\example\academia\model\ControleSistema.class
+com\example\academia\util\JPAUtil.class
+com\example\academia\App.class
+com\example\academia\model\Treinador.class
+com\example\academia\model\AlunoTreinoId.class
+com\example\academia\DAO\AlunoDAO.class
+com\example\academia\DAO\AlunoTreinoDAO.class
+com\example\academia\model\Treino.class
+com\example\academia\DAO\TreinadorDAO.class
+com\example\academia\DAO\ControleSistemaDAO.class
+com\example\academia\model\Aluno.class
+com\example\academia\model\AlunoTreino.class
